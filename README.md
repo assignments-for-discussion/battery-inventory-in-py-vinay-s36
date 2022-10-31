@@ -14,8 +14,8 @@ and count the number of batteries in each classification.
 Batteries are classified as follows:
 
 - charged less than 410 times: classified as `low`
-- charged between 410 and 909 times: classified as `medium`
-- charged 910 times or more: classified as `high`
+- charged between 410 and 949 times: classified as `medium`
+- charged 950 times or more: classified as `high`
 
 The code in this repository has a function that needs to count the number of low, medium and high usage batteries. However, this function is not yet implemented.
 

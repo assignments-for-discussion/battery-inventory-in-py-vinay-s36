@@ -13,10 +13,10 @@ The state-of-health (SoH) of a battery compares a used battery and a fresh batte
 
 `SoH% = 100 * present_capacity / rated_capacity`
 
-`present_capacity` =  The charge available in the battery, after a full charge
-`rated_capacity` = The rated capacity of a new battery
+`present_capacity` =  The charge available in the battery, after a full charge.
+`rated_capacity` = The rated capacity of a new battery.
 
-For example, the rated capacity of a battery is `120 Ah`. It now gives only `105 Ah` after charging. Then, its SoH is calculated as:
+For example, the rated capacity of a battery is `120 Ah`. It now gives only `105 Ah` after charging - that is its present capacity. Then, its SoH is calculated as:
 
 `SoH% = 100 * 105 / 120 = 87.5%`
 
@@ -24,7 +24,7 @@ For example, the rated capacity of a battery is `120 Ah`. It now gives only `105
 
 Input is the present capacity of a bunch of batteries. Assume all of them have a rated capacity of 120 Ah.
 
-You need to count how many are `healthy`, how many can `exchange`, and how many have already `failed`.
+You need to count how many are `healthy`, how many can `exchange`, and how many have already `failed`, as per the criteria below.
 
 Batteries are classified by SoH:
 
@@ -42,6 +42,7 @@ The code in this repository already has a function to do this. However, this fun
 There is also a test function in the code.
 The asserts express what's needed from the code. Do not change or remove the asserts.
 Feel free to add more asserts, though.
+
 Of course, the function isn't implemented yet, and returns wrong values. Hence the condition in the assert fails and it aborts the program.
 
 Implement the function to count correctly and pass the test.

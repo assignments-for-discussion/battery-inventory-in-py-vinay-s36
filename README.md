@@ -29,8 +29,8 @@ You need to count how many are `healthy`, how many can `exchange`, and how many 
 Batteries are classified by SoH:
 
 - SoH more than `80%`, up to `100%`: classified as `healthy`
-- SoH between `80%` and `65%`: classified as `exchange`
-- SoH below `65%`: classified as `failed`
+- SoH between `80%` and `63%`: classified as `exchange`
+- SoH below `63%`: classified as `failed`
 
 The code needs to:
 1. Convert present capacity to SoH

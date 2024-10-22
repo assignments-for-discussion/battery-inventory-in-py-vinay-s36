@@ -10,7 +10,7 @@ def count_batteries_by_health(present_capacities):
         soh = 100 * capacity / rated_capacity
         if soh > 83:
             battery_health_counts["healthy"] += 1 #classified as  healthy if SoH > 83
-        elif 63 < soh <= 83:
+        elif 63 <= soh <= 83:
             battery_health_counts["exchange"] += 1 #classified as exchange if SoH is between 63% and 83% 
         else:
             battery_health_counts["failed"] += 1 #classified as failed if SoH is below 63%
